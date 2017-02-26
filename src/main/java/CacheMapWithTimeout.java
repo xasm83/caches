@@ -186,7 +186,7 @@ public class CacheMapWithTimeout<K, V> {
             return;
         }
 
-        //it could be improved using the way JDK 8 does resize  
+        //it could be improved using the way JDK 8 does resize
         @SuppressWarnings("unchecked")
         Entry<K, V>[] newEntries = (Entry<K, V>[]) new Entry[capacity << 1];
         for (int i = 0; i < entries.length; i++) {
