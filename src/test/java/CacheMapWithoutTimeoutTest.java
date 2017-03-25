@@ -17,7 +17,7 @@ public class CacheMapWithoutTimeoutTest {
     public void setUp() {
         mockStatic(System.class);
     }
-    
+
     @Test
     public void testTTLNotEvicted() {
         when(System.nanoTime()).thenReturn(10L);
